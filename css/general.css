@@ -1,0 +1,239 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rufina';
+	src: url('../fonts/Rufina-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rufina';
+	src: url('../fonts/Rufina-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter24pt-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+:root {
+    --color-light: #FFFFFF;
+    --color-dark: #000000;
+    --color-headline-body: #4D4D4D;
+    --color-reservation-bg: #EBF0E4;
+    --color-footer-bg: #233000;
+
+    --font-rufina: 'Rufina', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+
+    --header-height: 208px;
+
+    --container-width-large-monitor: 1644px;
+    --container-width-medium-monitor: 1300px;
+    --container-padding-x: 15px;
+
+    --transition-diration: 0.2s;
+
+    --border-button: 2px solid #FFFFFF;
+}
+
+
+body {
+    color: var(--color-dark);
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+    transition-duration: var(--transition-diration);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-rufina);
+    font-weight: 700;   
+}
+
+.large-title {
+    font-size: clamp(70px, min(16.67vw, 16.67vh), 148px);
+    line-height: 1.02;
+    color: var(--color-light);
+}
+
+.heading-one {
+    font-size: 108px;
+    line-height: 1.1;
+}
+
+.heading-two {
+    font-size: 88px;
+    line-height: 1.2;
+}
+
+.heading-three {
+    font-size: 68px;
+    line-height: 1.2;
+}
+
+.heading-four {
+    font-size: 48px;
+    line-height: 1.3;
+}
+
+.heading-five {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.heading-six {
+    font-size: 26px;
+    line-height: 1.8;
+}
+
+.headline-body {
+    font-family: var(--font-lato);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    color: var(--color-headline-body);
+}
+
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
+
+.container {
+    max-width: calc(var(--container-width-large-monitor) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+.container-relative {
+    position: relative;
+}
+
+.container-full-height {
+    height: 100%;
+}
+
+.button {
+    font-family: var(--font-rufina);
+    font-weight: 700;
+    font-size: 32px;
+    border: var(--border-button);
+    background-color: transparent;
+}
+
+.image-adaptivity {
+    width: 100%;
+    height: auto;
+}
+
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--container-padding-x);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 65px;
+}
+
+.header-logo {
+    max-width: 307px;
+}
+
+.header-burger-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 14px;
+    background-color: transparent;
+    color: var(--color-light);
+    border: none;
+}
+
+.header-burger-button-line {
+    width: 46px;
+    height: 2px;
+    background-color: currentColor;
+}
+
+.header-reservation {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header-reservation-phone {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 26px;
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.header-reservation-button {
+    width: 285px;
+    height: 88px;
+    color: var(--color-light);
+}
+
+.head-banner-large {
+    width: 100%;
+    height: 100vh;
+}
+
+.menu-item-price {
+    display: block;
+    font-family: var(--font-rufina);
+    font-weight: 700;
+    text-align: right;
+    padding-bottom: 10px;
+    border-bottom: 4px dotted var(--color-dark);
+}
