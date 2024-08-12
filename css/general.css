@@ -73,12 +73,15 @@
     --color-reservation-bg: #EBF0E4;
     --color-footer-bg: #233000;
     --color-footer-button-bg: #5E6600;
+    --color-header-bg-to-fixed: #222222;
+    --color-header-drop-items-hover: #9CAA00;
 
     --font-rufina: 'Rufina', sans-serif;
     --font-lato: 'Lato', sans-serif;
     --font-inter: 'Inter', sans-serif;
 
     --header-height: 208px;
+    --header-height-fixed: 150px;
 
     --container-width-large-monitor: 1644px;
     --container-width-medium-monitor: 1300px;
@@ -87,6 +90,10 @@
     --transition-diration: 0.2s;
 
     --border-button: 2px solid #FFFFFF;
+
+    --z-index-start: 1;
+    --z-index-medium: 10;
+    --z-index-big: 100;
 }
 
 
@@ -180,6 +187,26 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
+/* Блюр-фильтр */
+.blur-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный цвет */
+    backdrop-filter: blur(10px); /* Эффект размытия */
+    z-index: 900; /* Под выезжающим блоком */
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.blur-filter.show {
+    opacity: 1;
+    z-index: 10;
+}
+
+
 .button {
     font-family: var(--font-rufina);
     font-weight: 700;
@@ -193,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
-
+/* Header */
 .header {
     position: absolute;
     top: 0;
@@ -206,6 +233,13 @@ h1, h2, h3, h4, h5, h6 {
     padding-inline: var(--container-padding-x);
 }
 
+.header-fixed {
+    position: fixed; /* Фиксированное позиционирование после прокрутки */
+    top: 0;
+    height: var(--header-height-fixed);
+    background-color: var(--color-header-bg-to-fixed); /* Цвет фона при фиксировании */
+}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -213,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-logo {
-    max-width: 307px;
+    max-width: 260px;
 }
 
 .header-burger-button {
@@ -224,6 +258,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     color: var(--color-light);
     border: none;
+    transition-duration: var(--transition-diration);
+}
+
+.header-burger-button:hover {
+    cursor: pointer;
+    color: var(--color-headline-body);
 }
 
 .header-burger-button-line {
@@ -252,10 +292,16 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-light);
 }
 
+.header-reservation-button:hover {
+    cursor: pointer;
+}
+
+
 .head-banner-large {
     width: 100%;
     height: 100vh;
 }
+
 
 .menu-item-price {
     display: block;
@@ -266,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 4px dotted var(--color-dark);
 }
 
-
+/* Footer */
 .footer {
     width: 100%;
     background-color: var(--color-footer-bg);
@@ -307,16 +353,16 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.footer-contacts-data > a:hover {
+    text-decoration: underline;
+}
+
 .footer-contacts-address {
     margin-top: 30px;
     font-family: var(--font-lato);
     font-size: 18px;
     font-weight: 400;
     color: var(--color-light);
-}
-
-.footer-contacts-data > a:hover {
-    text-decoration: underline;
 }
 
 .footer-contacts-connect {
@@ -353,6 +399,13 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
     font-weight: 700;
     color: var(--color-light);
+    transition-duration: var(--transition-diration);
+}
+
+.footer-contacts-button:hover {
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px;
 }
 
 .footer-contacts-form-end-text {
@@ -397,5 +450,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-soc1als-link:hover {
-    color: var(--color-headline-body);
+    color: var(--color-header-drop-items-hover);
 }

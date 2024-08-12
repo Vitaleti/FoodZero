@@ -56,6 +56,10 @@
     .footer-contacts-button {
         height: 76px;
     }
+
+    .header-drop-menu-link {
+        font-size: 48px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -143,6 +147,26 @@
 
     .footer-copyright {
         letter-spacing: 0px;
+    }
+
+    .header-drop-exit {
+        top: 1vh;
+        left: 1vw;
+        width: 65px;
+        height: 45px;
+    }
+
+    .header-drop-exit > svg {
+        width: 21px;
+    }
+
+    .header-drop-menu-link {
+        font-size: 32px;
+    }
+
+    .header-drop-menu-link::before {
+        left: -20px;
+        width: 8px;
     }
 }
 
@@ -242,6 +266,51 @@
         row-gap: 15px;
         align-items: center;
     }
+
+    .header-drop-wrapper {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .header-drop-menu-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-drop-menu-link {
+        font-size: 26px;
+    }
+
+    .header-drop-menu-link::before {
+        left: -15px;
+        width: 6px;
+    }
+
+    .header-drop-menu-list .header-drop-menu-item:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .header-drop-contact > *:not(:first-child) {
+        margin-top: 20px;
+    }
+
+    .header-drop-contact-title {
+        padding-bottom: 10px;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .header-drop-contact-title,
+    .header-drop-contact-data,
+    .header-drop-contact-address {
+        text-align: center;
+    }
+
+    .header-drop-soc1als-list {
+        justify-content: center;
+    }
 }
 
 /* Высота */
@@ -268,5 +337,19 @@
 
     .header-reservation-button {
         height: 100%;
+    }
+
+    .header-drop-menu-link::before {
+        left: -20px;
+        width: 8px;
+    }
+}
+
+@media (max-height: 800px) {
+    .header-drop-exit {
+        top: 2vh;
+        left: 1vw;
+        width: 65px;
+        height: 45px;
     }
 }
