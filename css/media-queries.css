@@ -48,6 +48,14 @@
     .reservation-info {
         margin-top: 60px;
     }
+
+    .footer-contacts-input {
+        height: 66px;
+    }
+
+    .footer-contacts-button {
+        height: 76px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -98,6 +106,44 @@
         align-items: center;
         row-gap: 30px;
     }
+
+    .footer-main {
+        padding-block: 80px;
+    }
+
+    .footer-contacts-data,
+    .footer-contacts-connect {
+        margin-top: 35px;
+    }
+
+    .footer-contacts-connect {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 30px;
+    }
+
+    .footer-contacts-input {
+        max-width: 350px;
+        height: 54px;
+    }
+
+    .footer-contacts-input::placeholder {
+        font-size: 18px;
+    }
+
+    .footer-contacts-button {
+        max-width: 175px;
+        height: 54px;
+        font-size: 18px;
+    }
+
+    .footer-end {
+        padding-block: 25px;
+    }
+
+    .footer-copyright {
+        letter-spacing: 0px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -145,6 +191,56 @@
 
     .reservation-title {
         font-size: clamp(50px, 16.67vw, 108px);
+    }
+
+    .footer-main-wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .footer-main-logo {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .footer-contacts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .footer-contacts-data,
+    .footer-contacts-address {
+        margin-top: 0;
+    }
+
+    .footer-contacts-form {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .footer-contacts-title {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer-contacts-input,
+    .footer-contacts-button {
+        max-width: 100%;
+    }
+
+    .footer-contacts-form-end-text,
+    .footer-copyright {
+        text-align: center;
+    }
+
+    .footer-end-wrapper {
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
     }
 }
 
