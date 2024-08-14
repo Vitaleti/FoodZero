@@ -11,9 +11,12 @@
     
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/general.css">
-        <link rel="stylesheet" href="./css/menu.css">
+        <link rel="stylesheet" href="./css/menu/menu.css">
+        <link rel="stylesheet" href="./css/header-main.css">
         <link rel="stylesheet" href="./css/header-drop.css">
+        <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/media-queries.css">
+        <link rel="stylesheet" href="./css/menu/menu-media-queries.css">
     </head>
 <body>
     <!-- Блок-фильтр -->
@@ -39,7 +42,7 @@
                         </a>
                     </li>
                     <li class="header-drop-menu-item">
-                        <a href="#" class="heading-three header-drop-menu-link">
+                        <a href="./menu.html" class="heading-three header-drop-menu-link">
                             Menu
                         </a>
                     </li>
@@ -54,7 +57,7 @@
                         </a>
                     </li>
                     <li class="header-drop-menu-item">
-                        <a href="#" class="heading-three header-drop-menu-link">
+                        <a href="./contact.html" class="heading-three header-drop-menu-link">
                             Contact
                         </a>
                     </li>
@@ -128,18 +131,21 @@
         </div>
     </section>
 
+    <!-- Баннер -->
     <section class="head-banner-large menu-banner">
         <div class="container container-relative container-full-height">
             <header class="header" id="header">
                 <div class="header-nav">
-                    <img 
-                        src="./img/logo/head-logo.png"
-                        alt="FoodZero"
-                        class="image-adaptivity header-logo"
-                        width="307"
-                        height="115"
-                        loading="lazy"
-                    >
+                    <a href="#" class="header-logo-link">
+                        <img 
+                            src="./img/logo/head-logo.png"
+                            alt="FoodZero"
+                            class="image-adaptivity header-logo"
+                            width="307"
+                            height="115"
+                            loading="lazy"
+                        >
+                    </a>
                     <button
                         class="header-burger-button"
                         type="button"

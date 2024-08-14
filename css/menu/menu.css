@@ -1,6 +1,8 @@
 .menu-banner {
     background: 
-        url('../img/menu/background-banner-image.jpg') center center / cover no-repeat;
+        url('../../img/menu/background-banner-image.jpg')
+        center center / 
+        cover no-repeat;
 }
 
 .menu-banner-body {
@@ -21,7 +23,7 @@
 
 .starters {
     background: 
-        url('../img/icons/Blueberry.png')
+        url('../../img/icons/Blueberry.png')
         top right
         no-repeat;
     padding-block: 120px 140px;
@@ -115,7 +117,7 @@
     appearance: none; /* Убирает стандартный стиль стрелки в некоторых браузерах */
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('../img/icons/select-icon-angle-down.png'); /* Кастомная иконка стрелки */
+    background-image: url('../../img/icons/select-icon-angle-down.png'); /* Кастомная иконка стрелки */
     background-position: right 40px center;
     background-repeat: no-repeat;
 }

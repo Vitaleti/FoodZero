@@ -1,0 +1,60 @@
+
+/* Ширина */
+@media (max-width: 1280px) {
+    .contact-banner-body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 14vh;
+    }
+
+    .contact-banner-main-text-wrapper {
+        max-width: 100%;
+        text-align: center;
+        row-gap: 10px;
+    }
+
+    .contact-banner-main-text-wrapper,
+    .contact-banner-work-time-wrapper {
+        height: auto;
+    }
+
+    .contact-banner-work-time-wrapper {
+        padding-bottom: 5vh;
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact-banner-work-time-wrapper {
+        padding-bottom: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-banner-body {
+        justify-content: space-between;
+        padding-block: calc(var(--header-height) + 20px) 5vh;
+    }
+
+    .contact-banner-work-time > :last-child {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .work-time-day {
+        flex-direction: column;
+    }
+
+    .work-time-day > :not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .work-time-day > p {
+        max-width: 100%;
+    }
+}
+
+/* Высота */

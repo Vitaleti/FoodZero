@@ -1,3 +1,4 @@
+/* Подключение шрифтов */
 @font-face {
 	font-family: 'Lato';
 	src: url('../fonts/Lato-Regular.woff2') format('woff2');
@@ -38,6 +39,7 @@
 	font-display: swap;
 }
 
+/* Кастомный скролбар */
 /* Общие стили для веб-кит браузеров */
 ::-webkit-scrollbar {
     width: 8px;  /* Тонкий скроллбар */
@@ -65,7 +67,7 @@
     scrollbar-color: #bbb #f0f0f0; /* Цвет ползунка и трека */
 }
 
-
+/* Глобальные переменные */
 :root {
     --color-light: #FFFFFF;
     --color-dark: #000000;
@@ -96,7 +98,7 @@
     --z-index-big: 100;
 }
 
-
+/* Глобальные стили для тегов */
 body {
     color: var(--color-dark);
 }
@@ -114,6 +116,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;   
 }
 
+/* Проприетарные классы */
 .large-title {
     font-size: clamp(70px, min(16.67vw, 16.67vh), 148px);
     line-height: 1.02;
@@ -158,7 +161,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-headline-body);
 }
 
-
 .visually-hidden {
     position: absolute !important;
     width: 1px !important;
@@ -171,7 +173,6 @@ h1, h2, h3, h4, h5, h6 {
     clip: rect(0 0 0 0) !important;
     overflow: hidden !important;
 }
-
 
 .container {
     max-width: calc(var(--container-width-large-monitor) + var(--container-padding-x) * 2);
@@ -220,88 +221,10 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 }
 
-/* Header */
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--header-height);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: var(--container-padding-x);
-}
-
-.header-fixed {
-    position: fixed; /* Фиксированное позиционирование после прокрутки */
-    top: 0;
-    height: var(--header-height-fixed);
-    background-color: var(--color-header-bg-to-fixed); /* Цвет фона при фиксировании */
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-    column-gap: 65px;
-}
-
-.header-logo {
-    max-width: 260px;
-}
-
-.header-burger-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 14px;
-    background-color: transparent;
-    color: var(--color-light);
-    border: none;
-    transition-duration: var(--transition-diration);
-}
-
-.header-burger-button:hover {
-    cursor: pointer;
-    color: var(--color-headline-body);
-}
-
-.header-burger-button-line {
-    width: 46px;
-    height: 2px;
-    background-color: currentColor;
-}
-
-.header-reservation {
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-}
-
-.header-reservation-phone {
-    font-family: var(--font-inter);
-    font-weight: 400;
-    font-size: 26px;
-    text-decoration: none;
-    color: var(--color-light);
-}
-
-.header-reservation-button {
-    width: 285px;
-    height: 88px;
-    color: var(--color-light);
-}
-
-.header-reservation-button:hover {
-    cursor: pointer;
-}
-
-
 .head-banner-large {
     width: 100%;
     height: 100vh;
 }
-
 
 .menu-item-price {
     display: block;
@@ -310,145 +233,4 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
     padding-bottom: 10px;
     border-bottom: 4px dotted var(--color-dark);
-}
-
-/* Footer */
-.footer {
-    width: 100%;
-    background-color: var(--color-footer-bg);
-}
-
-.footer-main {
-    padding-block: 130px;
-    border-bottom: 2px dotted var(--color-light);
-}
-
-.footer-main-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    column-gap: 15px;
-}
-
-.footer-main-logo {
-    max-width: 170px;
-    color: var(--color-light);
-    font-family: var(--font-rufina);
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.footer-contacts-title {
-    color: var(--color-light);
-}
-
-.footer-contacts-data {
-    margin-top: 55px;
-}
-
-.footer-contacts-data > a {
-    font-family: var(--font-lato);
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--color-light);
-    text-decoration: none;
-}
-
-.footer-contacts-data > a:hover {
-    text-decoration: underline;
-}
-
-.footer-contacts-address {
-    margin-top: 30px;
-    font-family: var(--font-lato);
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--color-light);
-}
-
-.footer-contacts-connect {
-    display: flex;
-    align-items: center;
-    column-gap: 28px;
-    margin-top: 55px;
-}
-
-.footer-contacts-input {
-    width: 100%;
-    max-width: 523px;
-    height: 96px;
-    display: flex;
-    align-items: center;
-    padding-inline: 40px 60px;
-    background-color: transparent;
-    border: 2px solid var(--color-light);
-}
-
-.footer-contacts-input,
-.footer-contacts-input::placeholder {
-    font-family: var(--font-lato);
-    font-size: 24px;
-    font-weight: 400;
-    color: var(--color-light);
-}
-
-.footer-contacts-button {
-    width: 100%;
-    max-width: 241px;
-    height: 88px;
-    background-color: var(--color-footer-button-bg);
-    border: none;
-    font-weight: 700;
-    color: var(--color-light);
-    transition-duration: var(--transition-diration);
-}
-
-.footer-contacts-button:hover {
-    cursor: pointer;
-    border-top-left-radius: 10px;
-    border-bottom-right-radius: 20px;
-}
-
-.footer-contacts-form-end-text {
-    margin-top: 15px;
-    font-family: var(--font-lato);
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--color-light);
-}
-
-.footer-end {
-    padding-block: 55px;
-}
-
-.footer-end-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-copyright {
-    font-family: var(--font-lato);
-    font-size: 24px;
-    font-weight: 400;
-    color: var(--color-light);
-    letter-spacing: 1.6px;
-}
-
-.footer-soc1als-list {
-    display: flex;
-    align-items: center;
-    column-gap: 28px;
-}
-
-.footer-soc1als-item {
-    width: 28px;
-    aspect-ratio: 1;
-}
-
-.footer-soc1als-link {
-    color: var(--color-light);
-}
-
-.footer-soc1als-link:hover {
-    color: var(--color-header-drop-items-hover);
 }

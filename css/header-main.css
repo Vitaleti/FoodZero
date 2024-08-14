@@ -1,0 +1,75 @@
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--container-padding-x);
+}
+
+.header-fixed {
+    position: fixed; /* Фиксированное позиционирование после прокрутки */
+    top: 0;
+    height: var(--header-height-fixed);
+    background-color: var(--color-header-bg-to-fixed); /* Цвет фона при фиксировании */
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 65px;
+}
+
+.header-logo {
+    max-width: 260px;
+}
+
+.header-burger-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 14px;
+    background-color: transparent;
+    color: var(--color-light);
+    border: none;
+    transition-duration: var(--transition-diration);
+}
+
+.header-burger-button:hover {
+    cursor: pointer;
+    color: var(--color-headline-body);
+}
+
+.header-burger-button-line {
+    width: 46px;
+    height: 2px;
+    background-color: currentColor;
+}
+
+.header-reservation {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.header-reservation-phone {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 26px;
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.header-reservation-button {
+    width: 285px;
+    height: 88px;
+    color: var(--color-light);
+}
+
+.header-reservation-button:hover {
+    cursor: pointer;
+}
