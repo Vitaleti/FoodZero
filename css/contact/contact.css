@@ -76,3 +76,71 @@
     color: var(--color-light);
     margin: 0;
 }
+
+
+.contacted {
+    padding-block: 270px 180px;
+    background: 
+        url('../../img/icons/Orange.png')
+        center 14vh
+        no-repeat,
+        var(--color-light);
+}
+
+.contacted-info-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    column-gap: 60px;
+}
+
+.contacted-info-wrapper-reverse {
+    flex-direction: row-reverse;
+    padding-top: 145px;
+}
+
+.contacted-info-image {
+    width: 41.25vw;
+    max-width: 792px;
+    height: auto;
+}
+
+.contacted-info-body {
+    padding-bottom: 80px;
+}
+
+.contacted-info-body h3 {
+    margin-right: 5.21vw;
+    font-family: var(--font-rufina);
+    font-weight: 700;
+    color: var(--color-footer-bg);
+}
+
+.contacted-info-body-link {
+    text-decoration: none;
+    color: var(--color-header-drop-items-hover);
+    transition-duration: var(--transition-diration);
+}
+
+.contacted-info-body-link:hover {
+    text-decoration: underline;
+    color: var(--color-footer-button-bg);
+}
+
+.contacted-info-body-button {
+    width: 293px;
+    height: 88px;
+    margin-top: 50px;
+    border: 2px solid var(--color-dark);
+    font-family: var(--font-rufina);
+    color: var(--color-dark);
+    background-color: transparent;
+}
+
+.contacted-info-body-button:hover {
+    cursor: pointer;
+    color: var(--color-footer-button-bg);
+    border-color: var(--color-footer-button-bg);
+    border-radius: 10px;
+}

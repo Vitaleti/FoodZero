@@ -74,7 +74,16 @@
 
 
 .pastries-drinks {
-    padding-bottom: 140px;
+    background: 
+        url('../../img/icons/Avocado.png')
+        top center/
+        14vw auto
+        no-repeat;
+    padding-block: 80px 140px;
+}
+
+.pastries-drinks-body {
+    margin-top: 140px;
 }
 
 

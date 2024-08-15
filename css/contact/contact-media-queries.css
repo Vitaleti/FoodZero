@@ -1,5 +1,34 @@
 
 /* Ширина */
+@media (max-width: 1400px) {
+    .contacted-info-wrapper {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 80px;
+    }
+
+    .contacted-info-wrapper-reverse {
+        padding-top: 50px;
+    }
+
+    .contacted-info-image {
+        width: 100%;
+    }
+
+    .contacted-info-body h3 {
+        margin-right: 0;
+    }
+
+    .contacted-info-body-text-reverse {
+        text-align: center;
+    }
+
+    .contacted-info-body-button {
+        display: block;
+        margin-inline: auto;
+    }
+}
+
 @media (max-width: 1280px) {
     .contact-banner-body {
         flex-direction: column;
@@ -23,6 +52,11 @@
         padding-bottom: 5vh;
         max-width: 60%;
     }
+
+    .contacted {
+        padding-block: 200px 100px;
+        background-position: center 3vh;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -40,6 +74,12 @@
 
     .contact-banner-work-time > :last-child {
         margin-top: 15px;
+    }
+
+    .contacted {
+        padding-block: 100px 30px;
+        background-position: center 2vh;
+        background-size: 50% auto;
     }
 }
 

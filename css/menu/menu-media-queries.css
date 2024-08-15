@@ -9,6 +9,18 @@
     .menu-item-price {
         font-size: 38px;
     }
+
+    .mains {
+        padding-bottom: 60px;
+    }
+
+    .pastries-drinks {
+        background-size: 18vw auto;
+    }
+
+    .pastries-drinks-body {
+        margin-top: 115px;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -31,6 +43,10 @@
 
     .reservation-info {
         margin-top: 60px;
+    }
+
+    .pastries-drinks {
+        background-size: 22vw auto;
     }
 }
 
@@ -60,6 +76,10 @@
         flex-direction: column;
         align-items: center;
         row-gap: 30px;
+    }
+
+    .pastries-drinks {
+        background-size: 27vw auto;
     }
 }
 
@@ -95,6 +115,10 @@
 
     .reservation-title {
         font-size: clamp(50px, 16.67vw, 108px);
+    }
+
+    .pastries-drinks {
+        background-size: 40vw auto;
     }
 }
 
