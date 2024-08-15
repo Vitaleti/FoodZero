@@ -57,12 +57,20 @@
         padding-block: 200px 100px;
         background-position: center 3vh;
     }
+
+    .reservation-other {
+        background-size: 30% auto;
+    }
 }
 
 @media (max-width: 1024px) {
     .contact-banner-work-time-wrapper {
         padding-bottom: 0;
         max-width: 100%;
+    }
+
+    .reservation-other {
+        background-size: 50%;
     }
 }
 

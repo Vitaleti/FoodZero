@@ -146,6 +146,12 @@
 }
 
 
+.reservation-other {
+    background: 
+        url('../../img/icons/Mint.png')
+        8.28vw 50px no-repeat;
+}
+
 .reservation-info-wrapper-other {
     margin-top: 100px;
 }
