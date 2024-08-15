@@ -1,0 +1,63 @@
+.reservation {
+    background-color: var(--color-reservation-bg);
+    padding-block: 220px;
+}
+
+.reservation-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 130px;
+}
+
+.reservation-info {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+    margin-top: 185px;
+}
+
+.reservation-info-input {
+    width: 100%;
+    max-width: 516px;
+    height: 96px;
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    background-color: transparent;
+    padding-inline: 40px 60px;
+}
+
+.reservation-info-input::placeholder {
+  color: var(--color-dark);
+}
+
+.reservation-info-select {
+    appearance: none; /* Убирает стандартный стиль стрелки в некоторых браузерах */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../img/icons/select-icon-angle-down.png'); /* Кастомная иконка стрелки */
+    background-position: right 40px center;
+    background-repeat: no-repeat;
+}
+
+.reservation-button {
+    width: 100%;
+    max-width: 344px;
+    height: 88px;
+    background-color: var(--color-footer-bg);
+    font-family: var(--font-rufina);
+    font-weight: 700;
+    color: var(--color-light);
+    border: none;
+    margin: 0 auto;
+    transition-duration: var(--transition-diration);
+}
+
+.reservation-button:hover {
+    cursor: pointer;
+    background-color: var(--color-header-bg-to-fixed);
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+}

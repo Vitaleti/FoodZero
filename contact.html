@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="./css/contact/contact.css">
         <link rel="stylesheet" href="./css/header-main.css">
         <link rel="stylesheet" href="./css/header-drop.css">
+        <link rel="stylesheet" href="./css/reservation.css">
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/media-queries.css">
         <link rel="stylesheet" href="./css/contact/contact-media-queries.css">
@@ -244,6 +245,93 @@
                 </button>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Бронирование места -->
+    <section class="reservation" id="reservation-section">
+        <div class="container">
+            <h2 class="heading-one main-title reservation-title">
+                Make a Reservation
+            </h2>
+            <div class="headline-body main-subtitle">
+                <p>
+                    Get in touch with restaurant
+                </p>
+            </div>
+            <form class="reservation-info-wrapper reservation-info-wrapper-other">
+                <div class="reservation-info-other">
+                    <div class="reservation-info-named">
+                        <label class="visually-hidden" for="first_name">First name</label>
+                        <input
+                            type="text"
+                            placeholder="First name"
+                            id="first_name"
+                            class="reservation-info-input-other"
+                        >
+
+                        <label class="visually-hidden" for="last_name">Last name</label>
+                        <input
+                            type="text"
+                            placeholder="Last name"
+                            id="last_name"
+                            class="reservation-info-input-other"
+                        >
+                    </div>
+
+                    <label class="visually-hidden" for="email-reserve">Email</label>
+                    <input
+                        type="text"
+                        placeholder="Email"
+                        id="email-reserve"
+                        class="reservation-info-input-other"
+                    >
+
+                    <label class="visually-hidden" for="phone-reserve">Phone</label>
+                    <input
+                        type="text"
+                        placeholder="Phone"
+                        id="phone-reserve"
+                        class="reservation-info-input-other"
+                    >
+
+                    <div class="reservation-info-datetime">
+                        <label class="visually-hidden" for="date">Date</label>
+                        <input
+                            type="text"
+                            placeholder="16/22/2021"
+                            id="date"
+                            class="reservation-info-input-other"
+                        >
+        
+                        <label class="visually-hidden" for="time">Time</label>
+                        <select class="reservation-info-input-other reservation-info-select" id="time" required>
+                            <option value="" disabled selected>6:00 pm</option>
+                            <option value="8:00 pm">8:00 pm</option>
+                            <option value="10:00 pm">10:00 pm</option>
+                            <option value="14:00 pm">14:00 pm</option>
+                            <option value="15:00 pm">15:00 pm</option>
+                            <option value="18:00 pm">18:00 pm</option>
+                            <option value="21:00 pm">21:00 pm</option>
+                        </select>
+                    </div>
+    
+                    <label class="visually-hidden" for="count-person">Persons</label>
+                    <select class="reservation-info-input-other reservation-info-select" id="count-person" required>
+                        <option value="" disabled selected>2 Person</option>
+                        <option value="3 Person">3 Person</option>
+                        <option value="4 Person">4 Person</option>
+                        <option value="8 Person">8 Person</option>
+                        <option value="10 Person">10 Person</option>
+                    </select>
+                </div>
+                <button
+                    class="reservation-button heading-five"
+                    type="submit"
+                >
+                    Book Now
+                </button>
+            </form>
         </div>
     </section>
 

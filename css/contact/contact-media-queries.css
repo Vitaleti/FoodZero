@@ -81,6 +81,12 @@
         background-position: center 2vh;
         background-size: 50% auto;
     }
+
+    .reservation-info-named,
+    .reservation-info-datetime {
+        flex-direction: column;
+        row-gap: 45px;
+    }
 }
 
 @media (max-width: 500px) {

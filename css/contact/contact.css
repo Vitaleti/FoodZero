@@ -144,3 +144,37 @@
     border-color: var(--color-footer-button-bg);
     border-radius: 10px;
 }
+
+
+.reservation-info-wrapper-other {
+    margin-top: 100px;
+}
+
+.reservation-info-other {
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+}
+
+.reservation-info-named,
+.reservation-info-datetime {
+    display: flex;
+    column-gap: 45px;
+}
+
+.reservation-info-input-other {
+    width: 100%;
+    height: 96px;
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    background-color: transparent;
+    padding-inline: 40px 60px;
+}
+
+.reservation-info-input-other::placeholder {
+    color: var(--color-dark);
+  }
+  
