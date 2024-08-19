@@ -11,13 +11,13 @@
     
         <link rel="stylesheet" href="./css/normalize.css">
         <link rel="stylesheet" href="./css/general.css">
-        <link rel="stylesheet" href="./css/menu/menu.css">
+        <link rel="stylesheet" href="./css/index/index.css">
         <link rel="stylesheet" href="./css/header-main.css">
         <link rel="stylesheet" href="./css/header-drop.css">
         <link rel="stylesheet" href="./css/reservation.css">
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/media-queries.css">
-        <link rel="stylesheet" href="./css/menu/menu-media-queries.css">
+        <link rel="stylesheet" href="./css/index/index-media-queries.css">
     </head>
 <body>
     <!-- Блок-фильтр -->
@@ -133,9 +133,9 @@
     </section>
 
     <!-- Баннер -->
-    <section class="head-banner-large menu-banner">
+    <section class="home-banner">
         <div class="container container-relative container-full-height">
-            <header class="header" id="header">
+            <header class="header home-header-z-index" id="header">
                 <div class="header-nav">
                     <a href="#" class="header-logo-link">
                         <img 
@@ -174,212 +174,81 @@
                     </button>
                 </div>
             </header>
-            <h1 class="visually-hidden">Menu</h1>
-            <div class="menu-banner-body">
+            <h1 class="visually-hidden">Home</h1>
+            <div class="home-banner-body">
                 <h2 class="large-title">
-                    View Our New Menu
+                    Healthy Eating 
+                    is important
+                    part of lifestyle
                 </h2>
-                <h3 class="heading-five menu-banner-body-subtitle">
-                    The freshest ingredients for you every day
+                <h3 class="heading-five home-banner-body-subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu
                 </h3>
+                <div class="home-banner-body-scroll">
+                    <span class="heading-four home-banner-body-scroll-text">Scroll</span>
+                    <div class="home-banner-body-scroll-line"></div>
+                </div>
+                <div class="home-banner-body-spices">
+                    <img 
+                        src="./img/index/spices1.png"
+                        alt="spices1"
+                        class="home-banner-body-spices-item"
+                        width="250"
+                        height="240"
+                        loading="lazy"
+                    >
+                    <img 
+                        src="./img/index/spices2.png"
+                        alt="spices2"
+                        class="home-banner-body-spices-item"
+                        width="255"
+                        height="240"
+                        loading="lazy"
+                    >
+                    <img 
+                        src="./img/index/spices3.png"
+                        alt="spices3"
+                        class="home-banner-body-spices-item"
+                        width="260"
+                        height="240"
+                        loading="lazy"
+                    >
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="starters">
-        <div class="container">
-            <h2 class="heading-one main-title">
-                Starters
-            </h2>
-            <div class="headline-body main-subtitle">
-                <p>
-                    This is a section of your menu. Give your section a brief description
-                </p>
-            </div>
-            <div class="starters-body">
-                <img 
-                    src="./img/menu/menu-item.jpg"
-                    alt="menu item"
-                    class="starters-body-image"
-                    width="792"
-                    height="989"
-                    loading="lazy"
-                >
-                <ul class="starters-body-menu-list">
-                    <li class="starters-body-menu-item">
-                        <span class="heading-four menu-item-price">
-                            $20
-                        </span>
-                        <h3 class="heading-three menu-item-name">
-                            Grilled Okra and Tomatoes
-                        </h3>
-                        <div class="headline-body menu-item-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                        </div>
-                    </li>
-
-                    <li class="starters-body-menu-item">
-                        <span class="heading-four menu-item-price">
-                            $18
-                        </span>
-                        <h3 class="heading-three menu-item-name">
-                            Cucumber Salad
-                        </h3>
-                        <div class="headline-body menu-item-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                        </div>
-                    </li>
-
-                    <li class="starters-body-menu-item">
-                        <span class="heading-four menu-item-price">
-                            $12
-                        </span>
-                        <h3 class="heading-three menu-item-name">
-                            Basil Pancakes
-                        </h3>
-                        <div class="headline-body menu-item-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="mains">
-        <div class="container">
-            <h2 class="heading-one main-title">
-                Mains
-            </h2>
-            <div class="headline-body main-subtitle">
-                <p>
-                    This is a section of your menu. Give your section a brief description
-                </p>
-            </div>
-            <div class="starters-body mains-body">
-                <img 
-                    src="./img/menu/mains-item.jpg"
-                    alt="mains menu item"
-                    class="starters-body-image"
-                    width="792"
-                    height="989"
-                    loading="lazy"
-                >
-                <ul class="starters-body-menu-list">
-                    <li class="starters-body-menu-item">
-                        <span class="heading-four menu-item-price">
-                            $20
-                        </span>
-                        <h3 class="heading-three menu-item-name">
-                            Deep Sea Snow White Cod Fillet
-                        </h3>
-                        <div class="headline-body menu-item-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                        </div>
-                    </li>
-
-                    <li class="starters-body-menu-item">
-                        <span class="heading-four menu-item-price">
-                            $22
-                        </span>
-                        <h3 class="heading-three menu-item-name">
-                            Steak With Rosemary Butter
-                        </h3>
-                        <div class="headline-body menu-item-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                        </div>
-                    </li>
-
-                    <li class="starters-body-menu-item">
-                        <span class="heading-four menu-item-price">
-                            $24
-                        </span>
-                        <h3 class="heading-three menu-item-name">
-                            Steaks with Grilled Kimchi
-                        </h3>
-                        <div class="headline-body menu-item-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="pastries-drinks">
-        <div class="container">
-            <h2 class="heading-one main-title">
-                Pastries & Drinks
-            </h2>
-            <div class="headline-body main-subtitle">
-                <p>
-                    This is a section of your menu. Give your section a brief description
-                </p>
-            </div>
-            <div class="starters-body pastries-drinks-body">
-                <img 
-                    src="./img/menu/pastries-and-drinks-item.jpg"
-                    alt="menu item"
-                    class="starters-body-image"
-                    width="792"
-                    height="989"
-                    loading="lazy"
-                >
-                <ul class="starters-body-menu-list">
-                    <li class="starters-body-menu-item">
-                        <span class="heading-four menu-item-price">
-                            $158
-                        </span>
-                        <h3 class="heading-three menu-item-name">
-                            Wine Pairing
-                        </h3>
-                        <div class="headline-body menu-item-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                        </div>
-                    </li>
-
-                    <li class="starters-body-menu-item">
-                        <span class="heading-four menu-item-price">
-                            $168
-                        </span>
-                        <h3 class="heading-three menu-item-name">
-                            Natural Wine Pairing
-                        </h3>
-                        <div class="headline-body menu-item-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                        </div>
-                    </li>
-
-                    <li class="starters-body-menu-item">
-                        <span class="heading-four menu-item-price">
-                            $90
-                        </span>
-                        <h3 class="heading-three menu-item-name">
-                            Whisky Flyer
-                        </h3>
-                        <div class="headline-body menu-item-description">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+            <div class="home-banner-diet">
+                <div class="home-banner-diet-item">
+                    <img 
+                        src="./img/index/banner-home-image-2.jpg"
+                        alt="diet food"
+                        class="diet-item-image-one"
+                        width="792"
+                        height="560"
+                        loading="lazy"
+                    >
+                    <h3 class="heading-three diet-item-title">
+                        Start to plan your diet today
+                    </h3>
+                    <div class="diet-item-subtext">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu
+                        </p>
+                    </div>
+                </div>
+                <div class="home-banner-diet-item diet-item-shrink">
+                    <div class="diet-item-subtext">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque congue arcu
+                        </p>
+                    </div>
+                    <img 
+                        src="./img/index/banner-home-image-3.jpg"
+                        alt="spices"
+                        class="diet-item-image-two"
+                        width="508"
+                        height="710"
+                        loading="lazy"
+                    >
+                </div>
             </div>
         </div>
     </section>
@@ -432,6 +301,12 @@
                     Book Now
                 </button>
             </form>
+        </div>
+    </section>
+
+    <section class="ourMenu">
+        <div class="container">
+            
         </div>
     </section>
 
@@ -540,8 +415,23 @@
         </div>
     </footer>
 
-    <script src="./js/header-fixed-scroll.js"></script>
     <script src="./js/go-to-reservation.js"></script>
     <script src="./js/open-menu-navigate.js"></script>
+
+    <script>
+        document.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const heroSectionHeight = document.querySelector('.home-banner').offsetHeight;
+            
+            // console.log(heroSectionHeight);
+            // console.log(window.scrollY);
+
+            if (window.scrollY > heroSectionHeight) {
+                header.classList.add('header-fixed');
+            } else {
+                header.classList.remove('header-fixed');
+            }
+        });
+    </script>
 </body>
 </html>

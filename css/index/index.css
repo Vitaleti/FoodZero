@@ -1,0 +1,117 @@
+.home-banner {
+    width: 100%;
+    padding-bottom: 220px;
+    background-color: var(--color-footer-bg);
+}
+
+.home-header-z-index {
+    z-index: calc(var(--z-index-start) + 1);
+}
+
+.home-banner-body {
+    --scrollLineHeight: 570px;
+
+    height: calc(100vh + var(--scrollLineHeight));
+
+    position: relative;
+    z-index: var(--z-index-start);
+    padding-top: 25vh;
+    background: 
+        url('../../img/index/banner-home-image-1.jpg')
+        right 35vh no-repeat;
+}
+
+.home-banner-body-subtitle {
+    width: 50%;
+    margin-top: 50px;
+    color: var(--color-light);
+}
+
+.home-banner-body-scroll {
+    --transitionDirationScroll: 1s;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 10px;
+}
+
+.home-banner-body-scroll-text {
+    color: var(--color-light);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.home-banner-body-scroll-line {
+    width: 0; /* Нет ширины, чтобы линия была вертикальной */
+    height: 400px; /* Высота линии */
+    border-left: 2px dashed var(--color-light); /* Линия будет пунктирной */
+    margin: 0 auto; /* Выравнивание по центру (по желанию) */
+    transition-duration: var(--transitionDirationScroll);
+}
+
+.home-banner-body-scroll:hover .home-banner-body-scroll-line {
+    height: 200px;
+}
+
+.home-banner-body-spices {
+    position: absolute;
+    right: 15vw;
+    bottom: 8vh;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 45px;
+}
+
+.home-banner-body-spices-item {
+    transition-duration: var(--transition-diration);
+}
+
+.home-banner-body-spices-item:hover {
+    margin-bottom: 20px;
+}
+
+.home-banner-diet {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+
+.diet-item-title {
+    color: var(--color-light);
+}
+
+.home-banner-diet-item > :not(:first-child) {
+    margin-top: 55px;
+}
+
+.diet-item-shrink {
+    max-width: 508px;
+}
+
+.diet-item-image-one {
+    max-width: 792px;
+}
+
+.diet-item-image-two {
+    max-width: 508px;
+}
+
+.diet-item-image-one,
+.diet-item-image-two {
+    width: 100%;
+    height: auto;
+}
+
+.diet-item-subtext {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-light);
+}
+

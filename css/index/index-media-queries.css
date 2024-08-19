@@ -1,0 +1,68 @@
+@media (max-width: 1600px) {
+    .home-banner-diet {
+        column-gap: 45px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .home-banner-body-spices {
+        max-width: 150px;
+        right: 5vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    .home-banner-body {
+        background-position: 50vw 40vh;
+    }
+
+    .home-banner-body-spices {
+        flex-direction: column;
+        row-gap: 45px;
+    }
+
+    .home-banner-body-spices-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .home-banner-diet {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .home-banner-diet-item {
+        text-align: center;
+    }
+
+    .diet-item-shrink,
+    .diet-item-image-one {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-banner-body {
+        --scrollLineHeight: 370px;
+        background-position: left var(--header-height);
+    }
+
+    .home-banner-body-scroll,
+    .home-banner-body-spices {
+        display: none;
+    }
+}
+
+/* Высота */
+@media (max-height: 800px) {
+    .home-banner-body-scroll {
+        height: 300px;
+    }
+}
+
+@media (max-height: 600px) {
+    .home-banner-body-scroll {
+        height: 200px;
+    }
+}
