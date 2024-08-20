@@ -170,3 +170,49 @@
     width: 49.58vw;
     height: auto;
 }
+
+
+/* Food types */
+.food-types {
+    padding-block: 190px;
+}
+
+.food-types-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 30px;
+}
+
+.food-types-image-wrapper {
+    width: 260px;
+    aspect-ratio: 1;
+    background-color: var(--color-reservation-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dark);
+    margin: 0 auto;
+    transition-duration: var(--transition-diration);
+}
+
+.food-types-image-wrapper:hover {
+    width: 250px;
+    background-color: var(--color-footer-bg);
+    color: var(--color-light);
+}
+
+.food-types-item > :not(:first-child) {
+    margin-top: 40px;
+}
+
+.food-types-image-wrapper > svg {
+    width: 140px;
+    height: auto;
+}
+
+.food-types-title,
+.food-types-subtitle {
+    text-align: center;
+}
