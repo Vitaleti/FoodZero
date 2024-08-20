@@ -142,3 +142,31 @@
 .ourMenu-price-item > *:not(:last-child) {
     margin-bottom: 26px;
 }
+
+
+/* Cooking */
+.cook {
+    --imageLeafOne: url('../../img/icons/Leaf.png') 65vw bottom / 456px auto no-repeat;
+    --imageLeafTwo: url('../../img/icons/Leaf-rotate.png') 2vw 7vh / 365px auto no-repeat;
+
+    padding-top: 180px;
+    background:
+        var(--imageLeafOne),
+        var(--imageLeafTwo),
+        var(--color-reservation-bg);
+}
+
+.cook-wrapper {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 60px;
+}
+
+.cook-subtitle {
+    margin-top: 18px;
+}
+
+.cook-image {
+    width: 49.58vw;
+    height: auto;
+}

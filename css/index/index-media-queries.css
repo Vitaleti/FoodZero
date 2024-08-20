@@ -28,6 +28,28 @@
         max-width: 710px;
         margin: 0 auto;
     }
+
+    .cook-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 60px;
+    }
+
+    .cook-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cook-image {
+        width: 60vw;
+    }
+
+    .cook-title,
+    .cook-subtitle {
+        width: 70%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -74,6 +96,18 @@
     .home-banner-body-scroll,
     .home-banner-body-spices {
         display: none;
+    }
+
+    .cook-title,
+    .cook-subtitle,
+    .cook-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .cook-title {
+        font-size: 68px;
     }
 }
 
