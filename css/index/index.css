@@ -115,3 +115,30 @@
     color: var(--color-light);
 }
 
+
+/* Our Menu */
+.ourMenu {
+    background: 
+        url('../../img/index/ourMenu-bg-image.png')
+        top right no-repeat;
+    padding-block: 180px;
+}
+
+.ourMenu-title,
+.ourMenu-subtitle {
+    max-width: 40%;
+    text-align: left;
+}
+
+.ourMenu-price-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    column-gap: 60px;
+    row-gap: 100px;
+    margin-top: 150px;
+}
+
+.ourMenu-price-item > *:not(:last-child) {
+    margin-bottom: 26px;
+}

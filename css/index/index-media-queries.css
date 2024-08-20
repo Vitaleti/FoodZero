@@ -4,10 +4,29 @@
     }
 }
 
+@media (max-width: 1400px) {
+    .ourMenu-title,
+    .ourMenu-subtitle {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
 @media (max-width: 1280px) {
     .home-banner-body-spices {
         max-width: 150px;
         right: 5vw;
+    }
+
+    .ourMenu-price-list {
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .ourMenu-price-item {
+        max-width: 710px;
+        margin: 0 auto;
     }
 }
 
@@ -39,6 +58,10 @@
     .diet-item-shrink,
     .diet-item-image-one {
         display: none;
+    }
+
+    .ourMenu {
+        padding-block: 90px;
     }
 }
 
