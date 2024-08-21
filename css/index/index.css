@@ -216,3 +216,107 @@
 .food-types-subtitle {
     text-align: center;
 }
+
+
+/* Posts */
+.fashion {
+    padding-block: 130px 150px;
+}
+
+.fashion-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 60px;
+}
+
+.fashion-item > :not(:first-child) {
+    margin-top: 60px;
+}
+
+.fashion-item-image {
+    width: 100%;
+    max-width: 792px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.fashion-item-body {
+    padding-inline: 75px;
+}
+
+.fashion-item-post {
+    --dotPostSize: 4px;
+
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.fashion-item-post > :not(:first-child) {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-footer-button-bg);
+}
+
+.fashion-item-post-dot {
+    position: relative;
+    margin-left: calc(14px + var(--dotPostSize));
+}
+
+.fashion-item-post-dot::before {
+    content: '';
+    position: absolute;
+    left: calc(-18px + var(--dotPostSize));
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--dotPostSize);
+    aspect-ratio: 1;
+    background-color: currentColor;
+    border-radius: 50%;
+}
+
+.fashion-item-body-title {
+    margin-top: 45px;
+    padding-bottom: 18px;
+    border-bottom: 4px dotted var(--color-dark);
+}
+
+.fashion-item-body-subtitle {
+    padding-top: 20px;
+    font-family: var(--font-lato);
+    font-weight: 700;
+}
+
+.fashion-item-body-link {
+    margin-top: 45px;
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-dark);
+    line-height: 1;
+    text-decoration: none;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    padding: 15px 25px;
+
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+
+    transition-duration: var(--transition-diration);
+}
+
+.fashion-item-body-link:hover {
+    cursor: pointer;
+    color: var(--color-footer-button-bg);
+    border-color: currentColor;
+    column-gap: 20px;
+}
+
+.fashion-item-body-link > :last-child {
+    width: 46px;
+    height: auto;
+}
