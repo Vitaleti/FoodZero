@@ -12,8 +12,13 @@
     }
 
     .fashion-item-body {
-        padding-inline: 25px;
+        padding-inline: 15px;
     }
+
+    .calories-title {
+        width: 70vw;
+    }
+    
 }
 
 @media (max-width: 1400px) {
@@ -88,6 +93,28 @@
     .fashion-item-body {
         padding-inline: 25px;
     }
+
+    .calories-title {
+        width: 80vw;
+    }
+
+    .calories-item-title {
+        top: 28px;
+        left: 20px;
+    }
+
+    .calories-item::before {
+        top: 28px;
+        right: 28px;
+    }
+
+    .feedback {
+        padding-top: 0;
+    }
+
+    .feedback-text {
+        text-align: justify;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -137,6 +164,16 @@
     .fashion-item {
         width: 85vw;
     }
+
+    .calories-title {
+        width: 100%;
+    }
+
+    .calories-list {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -164,6 +201,26 @@
         flex-wrap: wrap;
         row-gap: 15px;
     }
+
+    .fashion-item-image-wrapper::before {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .calories-title {
+        font-size: clamp(50px, 16.67vw, 108px);
+    }
+
+    .feedback-wrapper {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    .feedback-text {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -176,6 +233,12 @@
     }
 
     .fashion-item-body-subtitle {
+        font-size: 18px;
+    }
+
+    .fashion-item-image-wrapper::before {
+        width: 100px;
+        height: 30px;
         font-size: 18px;
     }
 }

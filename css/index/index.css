@@ -233,6 +233,54 @@
     margin-top: 60px;
 }
 
+.fashion-item-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.image-blur-effect::after {
+    content: '';
+    position: absolute;
+    z-index: var(--z-index-start);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 20%;
+    transition-duration: var(--transition-diration);
+}
+
+.image-blur-effect:hover::after {
+    background-color: var(--color-dark);
+}
+
+.fashion-item-image-wrapper::before {
+    content: 'Fashion';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: calc(var(--z-index-start) + 1);
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-rufina);
+    font-size: 26px;
+    line-height: 1.8;
+    color: var(--color-light);
+    background-color: var(--color-footer-button-bg);
+    transition-duration: var(--transition-diration);
+}
+
+.fashion-item-image-wrapper:hover::before {
+    background-color: var(--color-header-bg-to-fixed);
+    border-radius: 10px;
+    top: 18px;
+    right: 18px;
+}
+
 .fashion-item-image {
     width: 100%;
     max-width: 792px;
@@ -318,5 +366,122 @@
 
 .fashion-item-body-link > :last-child {
     width: 46px;
+    height: auto;
+}
+
+
+/* Calories */
+.calories {
+    padding-block: 120px 140px;
+}
+
+.calories-title {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.calories-title,
+.calories-subtitle {
+    text-align: center;
+}
+
+.calories-list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+    margin-top: 120px;
+}
+
+.calories-item {
+    position: relative;
+    max-width: 508px;
+    height: auto;
+}
+
+.calories-item::before {
+    content: url('../../img/icons/vectors/arrow-to-read-more.svg');
+    width: 45px;
+    height: auto;
+    position: absolute;
+    top: 48px;
+    right: 48px;
+}
+
+.caloties-item-image {
+    width: 100%;
+    height: auto;
+}
+
+.calories-item-title {
+    position: absolute;
+    top: 48px;
+    left: 40px;
+}
+
+
+/* Feedback */
+.feedback {
+    padding-block: 100px;
+}
+
+.feedback-text {
+    max-width: 1260px;
+}
+
+.feedback-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.feedback-author {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.feedback-author-info > :not(:first-child) {
+    margin-top: 10px;
+}
+
+.feedback-author-role {
+    display: block;
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--color-headline-body);
+}
+
+.feedback-slider {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.feedback-slider-num {
+    font-family: var(--font-rufina);
+}
+
+.feedback-slider-left,
+.feedback-slider-right {
+    width: 58px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-dark);
+    background-color: transparent;
+    border: none;
+}
+
+.feedback-slider-left:hover,
+.feedback-slider-right:hover {
+    cursor: pointer;
+    color: var(--color-header-bg-to-fixed)
+}
+
+.feedback-slider svg {
+    width: 48px;
     height: auto;
 }
