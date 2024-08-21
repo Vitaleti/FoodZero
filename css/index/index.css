@@ -1,3 +1,12 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+/* Исправим */
+html, body {
+    overflow-x: hidden;
+}
+
 .home-banner {
     width: 100%;
     padding-bottom: 220px;
@@ -241,7 +250,7 @@
 .image-blur-effect::after {
     content: '';
     position: absolute;
-    z-index: var(--z-index-start);
+    z-index: calc(var(--z-index-start) - 1);
     top: 0;
     left: 0;
     width: 100%;
@@ -260,7 +269,7 @@
     position: absolute;
     top: 15px;
     right: 15px;
-    z-index: calc(var(--z-index-start) + 1);
+    z-index: var(--z-index-start);
     width: 200px;
     height: 60px;
     display: flex;
@@ -375,14 +384,14 @@
     padding-block: 120px 140px;
 }
 
-.calories-title {
-    width: 50vw;
-    margin: 0 auto;
-}
-
 .calories-title,
 .calories-subtitle {
     text-align: center;
+}
+
+.calories-title {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .calories-list {
